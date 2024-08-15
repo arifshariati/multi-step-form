@@ -1,5 +1,7 @@
+import FormWrapper from "../form-wrapper";
+
 const UserDetails = () => {
-  return <div>UserDetails</div>;
+  return <FormWrapper>UserDetails</FormWrapper>;
 };
 
 export default UserDetails;

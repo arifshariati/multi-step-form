@@ -1,5 +1,7 @@
+import FormWrapper from "../form-wrapper";
+
 const UserAccount = () => {
-  return <div>UserAccount</div>;
+  return <FormWrapper>UserAccount</FormWrapper>;
 };
 
 export default UserAccount;
