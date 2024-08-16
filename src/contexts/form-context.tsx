@@ -10,7 +10,11 @@ type FormContextType = {
 };
 const FormContext = createContext<FormContextType | undefined>(undefined);
 
-export const FormProvider = ({ children }: { children: React.ReactNode }) => {
+type FormProviderProps = {
+  children: React.ReactNode;
+};
+
+export const FormProvider = ({ children }: FormProviderProps) => {
   const [currentStep, setCurrentStep] = useState(0);
   const [formData, setFormData] = useState<{ [key: string]: any }>({});
 
